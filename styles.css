@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: roboto;
+}
+.me {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #eff4fd;
+
+}
+nav {
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-bet ween;
+    position: sticky;
+    z-index: 999;
+}
+nav ul li {
+    display: inline;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color: red;
+
+}
+.presentation {
+    margin-left: 4%;
+    margin-top: 13%;
+}
+.presentation h1{
+    font-size: 50px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+span {
+    color: orange;
+}
+.presentation p{
+    color: #555;
+    line-height: 22px;
+}
+.presentation a{
+    background: #212121;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px;
+    border-radius: 5px;
+}
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    top: 25%;
+}
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+.images:hover .shape{
+    bottom: 40px;
+}
+.images:hover .myself{
+    left: 45%;
+}
+/* about section styling */
+section{
+    padding: 100px 100px;
+}
+.about{
+    font-family: 'roboto';
+}
+.about .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: roboto;
+}
+.about .title::before{
+    content: "";
+    position:absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+.about .title::after{
+    content: "who i am";
+    position:absolute;
+    bottom: -12px;
+    padding: 5px;
+    left: 50%;
+    font-size: 20px;
+    color: red;
+    background: #fff;
+    transform: translateX(-50%);
+}
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-content .left{
+    width: 45%;
+}
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    
+}
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about .about-content .right .text span{
+    color: crimson;
+}
+.about .about-content .right p{
+    text-align: justify;
+}
+.about .about-content .right:hover{
+    transform: translate3d(42px, -62px, -135px);
+}
+.about .about-content .column{
+    width: 50%;
+}
+#profile:hover{
+    transform: translate3d(42px, -62px, -135px);
+}
+.portfolio{
+    text-align: center;
+}
+.portfolio h2{
+    font-family: roboto;
+    font-size: 50px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+
+.portfolio-content div p{
+    margin-right: 20px;
+   
+}
